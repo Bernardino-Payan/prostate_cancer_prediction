@@ -1,8 +1,6 @@
-venv/
-__pycache__/
 *.pyc
-.DS_Store
+__pycache__/
+venv/
 *.pkl
-*.log
-*.sqlite3
-*.csv
+.DS_Store
+
