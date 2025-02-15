@@ -4,3 +4,4 @@ venv/
 *.pkl
 .DS_Store
 
+!final_prostate_cancer_rf_model.pkl
