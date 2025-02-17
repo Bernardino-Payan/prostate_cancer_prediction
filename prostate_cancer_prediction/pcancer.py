@@ -1,4 +1,4 @@
-mport numpy as np
+import numpy as np
 import joblib
 import os
 from flask import Flask, request, jsonify, render_template
