@@ -1,0 +1,14 @@
+# Ignore unnecessary files and directories
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb
+*.log
+*.csv
+*.xls
+*.xlsx
+venv/
+.env
+
