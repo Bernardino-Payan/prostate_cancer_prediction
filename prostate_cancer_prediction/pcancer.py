@@ -58,11 +58,7 @@ def predict_json():
     try:
         # Expecting JSON input
         data = request.get_json()
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 453e0e2 (Added missing index.html to templates directory)
         # Extracting only the necessary top 10 features
         features = [float(data.get(feature, 0)) for feature in TOP_10_FEATURES]  # Default to 0 if missing
 
