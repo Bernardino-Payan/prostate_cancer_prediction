@@ -76,7 +76,3 @@ def predict_json():
 # Run the app
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5001)
-<<<<<<< HEAD
-=======
-
->>>>>>> 453e0e2 (Added missing index.html to templates directory)
