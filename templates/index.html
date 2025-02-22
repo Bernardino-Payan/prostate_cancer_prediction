@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prostate Cancer Prediction</title>
+</head>
+<body>
+    <h1>Prostate Cancer Prediction Model</h1>
+    
+    <form action="/predict" method="post">
+        <label for="feature_1">Alcohol Consumption (Moderate):</label>
+        <input type="text" name="Alcohol_Consumption_Moderate" required><br>
+
+        <label for="feature_2">Alcohol Consumption (Low):</label>
+        <input type="text" name="Alcohol_Consumption_Low" required><br>
+
+        <label for="feature_3">Treatment: Chemotherapy:</label>
+        <input type="text" name="Treatment_Recommended_Chemotherapy" required><br>
+
+        <label for="feature_4">Treatment: Hormone Therapy:</label>
+        <input type="text" name="Treatment_Recommended_Hormone Therapy" required><br>
+
+        <label for="feature_5">Cancer Stage (Localized):</label>
+        <input type="text" name="Cancer_Stage_Localized" required><br>
+
+        <label for="feature_6">Treatment: Surgery:</label>
+        <input type="text" name="Treatment_Recommended_Surgery" required><br>
+
+        <label for="feature_7">Treatment: Immunotherapy:</label>
+        <input type="text" name="Treatment_Recommended_Immunotherapy" required><br>
+
+        <label for="feature_8">Treatment: Radiation:</label>
+        <input type="text" name="Treatment_Recommended_Radiation" required><br>
+
+        <label for="feature_9">Diabetes:</label>
+        <input type="text" name="Diabetes" required><br>
+
+        <label for="feature_10">Cancer Stage (Metastatic):</label>
+        <input type="text" name="Cancer_Stage_Metastatic" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
+
+       
