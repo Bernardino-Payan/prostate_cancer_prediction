@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prostate-cancer-prediction
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: prostate-cancer
+  template:
+    metadata:
+      labels:
+        app: prostate-cancer
+    spec:
+      containers:
+        - name: prostate-cancer
+          image: bernardinopayan/prostate_cancer_api:latest  # UPDATED IMAGE
+          ports:
+            - containerPort: 5001
+          env:
+            - name: PORT
+              value: "5001"
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
